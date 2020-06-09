@@ -1,0 +1,17 @@
+dubbo:
+  scan:
+    base-packages: com.springcloud.dubbo_provider.service
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: spring-cloud://52.207.219.135
+spring:
+  application:
+    name: dubbo-spring-cloud-provider
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 52.207.219.135:8848
